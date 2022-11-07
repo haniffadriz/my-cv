@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--header-->
+        <nav>
+            <div class="brand">MyPorto</div>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+        <div class="intro" id="intro">
+            
+        </div>
+    
+    <!--About-->
+    <div class="about" id="about">
+        <img src="Assets/jelek.jpg" alt="" class="AboutImg">
+        <div class="self">
+            <h1>About me</h1>
+            <p>Saya merupakan mahasiswa Computer Science binus university.Saya lahir pada tanggal 7 maret 2000.Saat ini saya sedang mendalami ilmu pada bidang web developer khususnya bagian frontend.selain itu saya sangat tertarik untuk mempelajari hal-hal baru</p>
+            <div class="tab-title">
+                <div class="tab-links" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experince')">Experince</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+            </div>
+            <div class="tab-contents active" id="skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASRIPT</li>
+                    <li>BOOTSRAP</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experince">
+                <P>Pernah jadi tukang cuci piring</P>
+            </div>
+            <div class="tab-contents" id="education">
+                <P>S1 jurusan computer science</P>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div class="services" id="services">
+        <div class="self">
+            <h1>Services</h1>
+            <div class="row">
+                <div class="card">
+                    <h1>Frontend</h1>
+                    <p>Jika aku menjadi sesuatu yang sangat sexy</p>
+                </div>
+                <div class="card">
+                    <h1>Frontend</h1>
+                    <p>Jika aku menjadi sesuatu yang sangat sexy</p>
+                </div>
+                <div class="card">
+                    <h1>Frontend</h1>
+                    <p>Jika aku menjadi sesuatu yang sangat sexy</p>
+                </div>
+            </div>
+        </div>
+        <img src="Assets/about.jpg" alt="" class="ServicesImg">  
+    </div>
+    <!--Contact-->
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-links">
+            <i class="fa fa-envelope" style="margin-right: 5px;"></i>
+            <p class="email">haniffdrz@gmail.com</p>
+        </div>
+        <div class="footer-links">
+            <i class="fa fa-instagram" style="margin-right: 5px;"></i>
+            <p>@haniffdrz</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

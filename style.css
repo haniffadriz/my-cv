@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* header */
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    height: 50px;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 15px 20px;
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    background-color: rgb(113, 112, 112);
+}
+
+.intro {
+    background-image: url('Assets/yay.jpg');
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+    height: calc(100vh - 50px);
+}
+
+/* about */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.self {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center;
+    flex: 1;
+}
+
+.AboutImg {
+    width: 50%;
+}
+
+.tab-title {
+    display: flex;
+    width: 40%;
+    justify-content: space-between
+}
+
+.tab-links {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* service */
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ServicesImg {
+    width: 50%;
+}
+
+.self p{
+    text-align: justify;
+}
+
+.card {
+    background-color: grey;
+    width: 20%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active {
+    display: block;
+    margin-top: 10px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* tablet */
+
+@media screen and (max-width: 870px){
+    .AboutImg {
+        width: 100%;
+    }
+
+    .tab-title {
+        width: 100%;
+    }
+
+    .tab-contents {
+        height: 120px;
+    }
+
+    .ServicesImg {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column-reverse;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
