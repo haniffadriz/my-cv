@@ -7,3 +7,11 @@ const opentab = (tabname) => {
 
     document.getElementById(tabname).classList.add('active')
 }
+
+const btnMenu = document.querySelector('.menu-toggle')
+const menu = document.querySelector('nav ul')
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
+
