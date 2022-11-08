@@ -46,6 +46,7 @@ a {
     width: 28px;
     height: 4px;
     background-color: white;
+    transition: all .5s;
 }
 
 .intro {
