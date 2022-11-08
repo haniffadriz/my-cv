@@ -13,14 +13,14 @@
         <nav>
             <div class="brand">MyPorto</div>
             <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#intro" onclick="closetab()">Home</a></li>
+                <li><a href="#about" onclick="closetab()">About</a></li>
+                <li><a href="#services" onclick="closetab()">Services</a></li>
             </ul>
             <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="opn1"></span>
+                <span class="opn2"></span>
+                <span class="opn3"></span>
             </div>
         </nav>
         <div class="intro" id="intro">
@@ -34,7 +34,7 @@
             <h1>About me</h1>
             <p>Saya merupakan mahasiswa Computer Science binus university.Saya lahir pada tanggal 7 maret 2000.Saat ini saya sedang mendalami ilmu pada bidang web developer khususnya bagian frontend.selain itu saya sangat tertarik untuk mempelajari hal-hal baru</p>
             <div class="tab-title">
-                <div class="tab-links" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links active" onclick="opentab('skills')">Skills</div>
                 <div class="tab-links" onclick="opentab('experince')">Experince</div>
                 <div class="tab-links" onclick="opentab('education')">Education</div>
             </div>
